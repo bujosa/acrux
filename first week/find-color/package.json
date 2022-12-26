@@ -9,8 +9,10 @@
   "author": "Bujosa",
   "license": "ISC",
   "dependencies": {
+    "ethereum-cryptography": "^1.1.2"
+  },
+  "devDependencies": {
     "chai": "^4.3.7",
-    "ethereum-cryptography": "^1.1.2",
     "mocha": "^10.2.0"
   }
 }
