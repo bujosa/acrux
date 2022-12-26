@@ -1,0 +1,16 @@
+{
+  "name": "find-color",
+  "version": "1.0.0",
+  "description": "",
+  "main": "find-color.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Bujosa",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.7",
+    "ethereum-cryptography": "^1.1.2",
+    "mocha": "^10.2.0"
+  }
+}
