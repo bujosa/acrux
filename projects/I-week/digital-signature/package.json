@@ -1,10 +1,8 @@
 {
-  "name": "hash messages",
+  "name": "digital-signature",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
   "scripts": {
-    "test": "mocha src"
+    "test": "mocha"
   },
   "author": "Bujosa",
   "license": "ISC",
