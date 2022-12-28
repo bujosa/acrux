@@ -1,4 +1,4 @@
-const hashMessage = require('../index');
+const hashMessage = require('../hash-message');
 const { assert } = require('chai');
 const { toHex } = require("ethereum-cryptography/utils");
 
