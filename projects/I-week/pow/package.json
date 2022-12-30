@@ -2,7 +2,7 @@
   "name": "pow",
   "version": "1.0.0",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha *.test.js"
   },
   "author": "Bujosa",
   "license": "ISC",
