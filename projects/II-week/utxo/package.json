@@ -2,7 +2,7 @@
   "name": "unspent-trasaction-output",
   "version": "1.0.0",
   "scripts": {
-    "test": "mocha ./__test__/*.js"
+    "test": "mocha */*.js"
   },
   "author": "Bujosa",
   "license": "ISC",

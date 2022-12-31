@@ -2,7 +2,7 @@
   "name": "block-chain-network",
   "version": "1.0.0",
   "scripts": {
-    "test": "mocha ./__tests__/*.test.js"
+    "test": "mocha */*.test.js"
   },
   "author": "Bujosa",
   "license": "ISC",
