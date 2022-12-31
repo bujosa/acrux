@@ -2,11 +2,12 @@
   "name": "block-chain-network",
   "version": "1.0.0",
   "scripts": {
-    "test": "mocha *.test.js"
+    "test": "mocha ./__tests__/*.test.js"
   },
   "author": "Bujosa",
   "license": "ISC",
   "dependencies": {
+    "@faker-js/faker": "^7.6.0",
     "crypto-js": "^4.1.1"
   },
   "devDependencies": {
