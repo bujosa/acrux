@@ -1,0 +1,16 @@
+{
+  "name": "unspent-trasaction-output",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "mocha ./__test__/*.js"
+  },
+  "author": "Bujosa",
+  "license": "ISC",
+  "dependencies": {
+    "ethereum-cryptography": "^1.1.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}
