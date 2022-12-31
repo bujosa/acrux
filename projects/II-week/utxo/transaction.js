@@ -2,6 +2,7 @@ class Transaction {
     constructor(inputUTXOs, outputUTXOs) {
         this.inputUTXOs = inputUTXOs;
         this.outputUTXOs = outputUTXOs;
+        this.fee = 0;
     }
 
     execute() {
@@ -26,6 +27,8 @@ class Transaction {
             });
             throw new Error("Not enough funds!");
         }
+
+        this.fee = totalInputAmount - totalOutputAmount;
     }
 }
 

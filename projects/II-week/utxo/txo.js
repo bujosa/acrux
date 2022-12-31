@@ -4,7 +4,7 @@ class TXO {
         this.amount = amount;
         this.spent = false;
     }
-    
+
     spend() {
         this.spent = true;
     }
