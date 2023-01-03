@@ -1,5 +1,4 @@
 const crypto = require('crypto');
-const { assert } = require('chai');
 
 // use the crypto module to create a sha256 hash from the data passed in
 function sha256(data) {
