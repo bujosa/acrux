@@ -1,6 +1,8 @@
 {
   "name": "tree-data-structure",
   "version": "1.0.0",
+  "description": "Tree data structure",
+  "main": "node-structure.js",
   "scripts": {
     "test": "mocha */*.test.js"
   },
