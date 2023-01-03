@@ -5,34 +5,28 @@ class MerkleTree {
   }
 
   getRoot() {
-    if (this.leaves.length === 1) {
+    if (this.leaves.length == 1) {
       return this.leaves[0];
     }
 
-    if (this.leaves.length === 2) {
-      return this.concat(this.leaves[0], this.leaves[1]);
+    while (this.leaves.length > 1) {
+      const newLeaves = [];
+
+      for (let i = 0; i < this.leaves.length; i += 2) {
+        const left = this.leaves[i];
+        const right = this.leaves[i + 1];
+
+        if (right) {
+          newLeaves.push(this.concat(left, right));
+        } else {
+          newLeaves.push(left);
+        }
+      }
+
+      this.leaves = newLeaves;
     }
 
-    if (this.leaves.length > 2) {
-      return this.concat(
-        this.getLeftSubtree().getRoot(),
-        this.getRightSubtree().getRoot()
-      );
-    }
-  }
-
-  getLeftSubtree() {
-    return new MerkleTree(
-      this.leaves.slice(0, Math.ceil(this.leaves.length / 2)),
-      this.concat
-    );
-  }
-
-  getRightSubtree() {
-    return new MerkleTree(
-      this.leaves.slice(Math.ceil(this.leaves.length / 2)),
-      this.concat
-    );
+    return this.leaves[0];
   }
 }
 
