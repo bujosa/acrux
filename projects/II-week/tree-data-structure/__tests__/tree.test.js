@@ -28,6 +28,34 @@ describe('tree', () => {
         assert(tree.root.left, 'did not find a left node on the root!');
         assert.equal(tree.root.left.data, 3);
       });
+
+      describe('after adding another lesser node', () => {
+        before(() => {
+          tree.addNode(new Node(2));
+        });
+
+        it('should have add to the left node', () => {
+          assert(
+            tree.root.left.left,
+            'did not find a second left node on the root!'
+          );
+          assert.equal(tree.root.left.left.data, 2);
+        });
+      });
+
+      describe('after adding another lesser node', () => {
+        before(() => {
+          tree.addNode(new Node(4));
+        });
+
+        it('should have add to the left node', () => {
+          assert(
+            tree.root.left.right,
+            'did not find a right on the left node on the root!'
+          );
+          assert.equal(tree.root.left.right.data, 4);
+        });
+      });
     });
 
     describe('after adding a greater node', () => {
@@ -38,6 +66,34 @@ describe('tree', () => {
       it('should have add a right to the root', () => {
         assert(tree.root.right, 'did not find a right node on the root!');
         assert.equal(tree.root.right.data, 7);
+      });
+
+      describe('after adding another lesser node', () => {
+        before(() => {
+          tree.addNode(new Node(6));
+        });
+
+        it('should have add to the left node', () => {
+          assert(
+            tree.root.right.left,
+            'did not find a left on the right node on the root!'
+          );
+          assert.equal(tree.root.right.left.data, 6);
+        });
+      });
+
+      describe('after adding another lesser node', () => {
+        before(() => {
+          tree.addNode(new Node(8));
+        });
+
+        it('should have add to the left node', () => {
+          assert(
+            tree.root.right.right,
+            'did not find a second right node on the root!'
+          );
+          assert.equal(tree.root.right.right.data, 8);
+        });
       });
     });
   });
