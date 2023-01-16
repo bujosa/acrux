@@ -1,0 +1,18 @@
+{
+  "name": "front-end-libraries",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "mocha */*.test.js --runInBand --exit"
+  },
+  "author": "Bujosa",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^5.7.2",
+    "ganache-cli": "^6.12.2",
+    "ganache-core": "^2.13.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}
