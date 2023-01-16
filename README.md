@@ -6,8 +6,8 @@ This repo contains all exercises from [#AlchemyUniversity](https://university.al
 ## Project Structure
 - [x] [I-week: Blockchain Criptography](./projects/I-week/)
 - [x] [II-week: Blockchain Storage](./projects/II-week/)
-- [ ] [III-week: Ethereum](./projects/III-week/)
-- [ ] IV-week: Smart Contract Basics
+- [x] [III-week: Ethereum](./projects/III-week/)
+- [ ] [IV-week: Smart Contract Basics](./projects/IV-week/)
 - [ ] V-week: Solidity
 - [ ] VI-week: Solidity Core
 - [ ] VII-week: Solidity Next Level
