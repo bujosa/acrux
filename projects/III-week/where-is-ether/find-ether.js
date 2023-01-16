@@ -12,18 +12,18 @@ const provider = new providers.Web3Provider(ganacheProvider);
  */
 async function findEther(address) {
   const blockNumber = await provider.getBlockNumber();
-  const recepients = [];
+  const addresses = [];
 
   for (let i = 0; i < blockNumber; i++) {
     const response = await provider.getBlockWithTransactions(i);
     response.transactions.forEach((tx) => {
       if (tx.from === address) {
-        recepients.push(tx.to);
+        addresses.push(tx.to);
       }
     });
   }
 
-  return recepients;
+  return addresses;
 }
 
 module.exports = findEther;
