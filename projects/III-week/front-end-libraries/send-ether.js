@@ -11,6 +11,7 @@ async function sendEther({ value, to }) {
     to,
     gasLimit: 0x5208,
     gasPrice: 0x3b9aca00,
+    nonce: await provider.getTransactionCount(wallet.address),
   });
 
   const tx = await provider.sendTransaction(rawTx);
