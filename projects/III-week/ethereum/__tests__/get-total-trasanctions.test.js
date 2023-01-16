@@ -26,7 +26,7 @@ function mineBlock() {
   });
 }
 
-describe.only('getTotalTransactions', () => {
+describe('getTotalTransactions', () => {
   before(async () => {
     await provider.send({
       id: 1,
