@@ -7,7 +7,3 @@ This repo contains w1 to w3 exercises from [#AlchemyUniversity](https://universi
 - [x] [I-week: Blockchain Criptography](./projects/I-week/)
 - [x] [II-week: Blockchain Storage](./projects/II-week/)
 - [x] [III-week: Ethereum](./projects/III-week/)
-- [ ] [IV-week: Smart Contract Basics](./projects/IV-week/)
-- [ ] V-week: Solidity
-- [ ] VI-week: Solidity Core
-- [ ] VII-week: Solidity Next Level
